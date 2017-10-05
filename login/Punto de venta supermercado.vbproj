@@ -71,22 +71,59 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Class1.vb" />
+    <Compile Include="gestionarSubCategorias.Designer.vb">
+      <DependentUpon>gestionarSubCategorias.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="gestionarSubCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="gestionarCategorias.Designer.vb">
+      <DependentUpon>gestionarCategorias.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="gestionarCategorias.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="listarEliminarUsuarios.designer.vb">
+      <DependentUpon>listarEliminarUsuarios.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="listarEliminarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuPrincipal.Designer.vb">
+      <DependentUpon>menuPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registroUsuarios.Designer.vb">
+      <DependentUpon>registroUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registroUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestionarProductos.designer.vb">
+      <DependentUpon>gestionarProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestionarProveedores.designer.vb">
+      <DependentUpon>gestionarProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listarProveedores.designer.vb">
+      <DependentUpon>listarProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="listarProveedores.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -106,17 +143,35 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="gestionarSubCategorias.resx">
+      <DependentUpon>gestionarSubCategorias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="gestionarCategorias.resx">
+      <DependentUpon>gestionarCategorias.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="listarEliminarUsuarios.resx">
+      <DependentUpon>listarEliminarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuPrincipal.resx">
+      <DependentUpon>menuPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registroUsuarios.resx">
+      <DependentUpon>registroUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionarProductos.resx">
+      <DependentUpon>gestionarProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestionarProveedores.resx">
+      <DependentUpon>gestionarProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listarProveedores.resx">
+      <DependentUpon>listarProveedores.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
@@ -134,6 +189,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

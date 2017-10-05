@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "login", "login\login.vbproj", "{F669A4B3-9FB1-4336-B84F-4768FD8734E8}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Punto de venta supermercado", "login\Punto de venta supermercado.vbproj", "{F669A4B3-9FB1-4336-B84F-4768FD8734E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {803935B5-4212-487D-A8E1-D7C8C57C9ED6}
 	EndGlobalSection
 EndGlobal
