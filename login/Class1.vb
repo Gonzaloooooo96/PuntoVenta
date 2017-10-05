@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Class1
-    Dim con As New MySqlConnection("Server=127.0.0.1;Port=3306;Database=ventas;Uid=proyecto;password=Proyecto123;")
+    Dim con As New MySqlConnection("Server=127.0.0.1;Port=3306;Database=ventas;Uid=proyecto;password=SaleSprint;")
 
     Sub consulta(ByVal Tabla As DataGridView, ByVal Sql As String)
         Try
