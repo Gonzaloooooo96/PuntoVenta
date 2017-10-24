@@ -45,6 +45,8 @@ Partial Class registroUsuarios
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.CBtipousu = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Panel1
@@ -72,7 +74,7 @@ Partial Class registroUsuarios
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(212, 183)
+        Me.Label3.Location = New System.Drawing.Point(360, 185)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(171, 20)
         Me.Label3.TabIndex = 0
@@ -82,7 +84,7 @@ Partial Class registroUsuarios
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(508, 183)
+        Me.Label4.Location = New System.Drawing.Point(621, 185)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(139, 20)
         Me.Label4.TabIndex = 0
@@ -91,28 +93,28 @@ Partial Class registroUsuarios
         'nombre_cuenta
         '
         Me.nombre_cuenta.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nombre_cuenta.Location = New System.Drawing.Point(209, 208)
+        Me.nombre_cuenta.Location = New System.Drawing.Point(355, 207)
         Me.nombre_cuenta.MaxLength = 10
         Me.nombre_cuenta.Name = "nombre_cuenta"
         Me.nombre_cuenta.Size = New System.Drawing.Size(176, 26)
-        Me.nombre_cuenta.TabIndex = 1
+        Me.nombre_cuenta.TabIndex = 2
         Me.nombre_cuenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'pass_cuenta
         '
         Me.pass_cuenta.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pass_cuenta.Location = New System.Drawing.Point(490, 208)
+        Me.pass_cuenta.Location = New System.Drawing.Point(606, 207)
         Me.pass_cuenta.MaxLength = 10
         Me.pass_cuenta.Name = "pass_cuenta"
         Me.pass_cuenta.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.pass_cuenta.Size = New System.Drawing.Size(176, 26)
-        Me.pass_cuenta.TabIndex = 2
+        Me.pass_cuenta.TabIndex = 3
         Me.pass_cuenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(673, 208)
+        Me.Button6.Location = New System.Drawing.Point(788, 208)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(53, 26)
         Me.Button6.TabIndex = 0
@@ -129,7 +131,7 @@ Partial Class registroUsuarios
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(483, 20)
         Me.Label6.TabIndex = 23
-        Me.Label6.Text = "Los datos que debe completar en este paso son necesarios para el ingreso al siste" &
+        Me.Label6.Text = "Los datos que debe completar en este paso son necesarios para el ingreso al siste" & _
     "ma."
         '
         'Button1
@@ -160,9 +162,9 @@ Partial Class registroUsuarios
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(227, Byte), Integer))
         Me.Label14.Location = New System.Drawing.Point(186, 248)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(509, 25)
+        Me.Label14.Size = New System.Drawing.Size(533, 25)
         Me.Label14.TabIndex = 19
-        Me.Label14.Text = "PASO 2: PREGUNTAS DE RECUPERACIÓN DE CONTRASEÑA"
+        Me.Label14.Text = "PASO 2: PREGUNTAS PARA RECUPERACIÓN DE CONTRASEÑA"
         '
         'Label15
         '
@@ -256,7 +258,7 @@ Partial Class registroUsuarios
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(742, 20)
         Me.Label5.TabIndex = 22
-        Me.Label5.Text = "Debe elegir 2 preguntas e ingresar la respuesta de cada una, las respuestas le se" &
+        Me.Label5.Text = "Debe elegir 2 preguntas e ingresar la respuesta de cada una, las respuestas le se" & _
     "rán solicitadas en caso de que olvide su contraseña."
         '
         'Label7
@@ -285,13 +287,33 @@ Partial Class registroUsuarios
         Me.Label1.Text = "Debe completar paso 1 y 2"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'FormRegistro
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(96, 185)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(170, 20)
+        Me.Label8.TabIndex = 25
+        Me.Label8.Text = "Seleccione un tipo de cuenta"
+        '
+        'CBtipousu
+        '
+        Me.CBtipousu.FormattingEnabled = True
+        Me.CBtipousu.Location = New System.Drawing.Point(100, 213)
+        Me.CBtipousu.Name = "CBtipousu"
+        Me.CBtipousu.Size = New System.Drawing.Size(166, 21)
+        Me.CBtipousu.TabIndex = 1
+        '
+        'registroUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(879, 516)
+        Me.Controls.Add(Me.CBtipousu)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
@@ -316,10 +338,10 @@ Partial Class registroUsuarios
         Me.Controls.Add(Me.Label14)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "FormRegistro"
+        Me.Name = "registroUsuarios"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registro de usuario"
+        Me.Text = "n"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -347,4 +369,6 @@ Partial Class registroUsuarios
     Friend WithEvents Label7 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents CBtipousu As System.Windows.Forms.ComboBox
 End Class

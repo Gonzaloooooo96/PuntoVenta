@@ -12,13 +12,13 @@ Public Class login
         comando2.Connection = conexion
 
         Try
-            conexion.ConnectionString = "Server=localhost; Database=ventas; Uid=proyecto; Pwd=Proyecto123;"
+            conexion.ConnectionString = "Server=localhost; Database=supermercado; Uid=root; Pwd=xhandwyh;"
             conexion.Open()
             'MsgBox("Conectado")
         Catch ex As Exception
             MessageBox.Show("Lo sentimos, no se pudo autenticar al usuario debido a un problema en la conexión con la base de datos." & vbCr & vbCr & "                                     INFORMACIÓN  DEL ERROR:" & vbCr & vbCr & ex.Message, "Error al autenticar usuario", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
-        comando2.CommandText = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'vendedor'"
+        comando2.CommandText = "SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'usuario'"
         'condición en caso de no haber conexión con la base de datos el programa no se caiga'
         If conexion.State = False Then
 
@@ -33,13 +33,13 @@ Public Class login
                 Dim r As MySqlDataReader
 
                 Try
-                    conexion.ConnectionString = "Server=localhost; Database=ventas; Uid=proyecto; Pwd=Proyecto123;"
+                    conexion.ConnectionString = "Server=localhost; Database=supermercado; Uid=root; Pwd=xhandwyh;"
                     conexion.Open()
                     'MsgBox("Conectado")
                 Catch ex As Exception
                     MessageBox.Show("Lo sentimos, no se pudo autenticar al usuario debido a un problema en la conexión con la base de datos." & vbCr & vbCr & "                                     INFORMACIÓN  DEL ERROR:" & vbCr & vbCr & ex.Message, "Error al autenticar usuario", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                 End Try
-                comando.CommandText = "SELECT * FROM vendedor WHERE nombre_cuenta='" + TextBox1.Text + "' AND pass_cuenta='" + TextBox2.Text + "'"
+                comando.CommandText = "SELECT * FROM usuario WHERE cuenta_usuario='" + TextBox1.Text + "' AND contraseña='" + TextBox2.Text + "'"
                 r = comando.ExecuteReader
                 If r.HasRows <> False Then
                     r.Read()
@@ -68,7 +68,7 @@ Public Class login
         comando.Connection = conexion
 
         Try
-            conexion.ConnectionString = "Server=localhost; Database=ventas; Uid=root; Pwd=ascent;"
+            conexion.ConnectionString = "Server=localhost; Database=supermercado; Uid=root; Pwd=xhandwyh;"
             conexion.Open()
             'MsgBox("Conectado")
         Catch ex As Exception
@@ -84,7 +84,7 @@ Public Class login
         comando.Connection = conexion
 
         Try
-            conexion.ConnectionString = "Server=localhost; Database=ventas; Uid=root; Pwd=ascent;"
+            conexion.ConnectionString = "Server=localhost; Database=supermercado; Uid=root; Pwd=xhandwyh;"
             conexion.Open()
             'MsgBox("Conectado")
         Catch ex As Exception
@@ -108,7 +108,7 @@ Public Class login
         comando.Connection = conexion
 
         Try
-            conexion.ConnectionString = "Server=localhost; Database=ventas; Uid=proyecto; Pwd=Proyecto123;"
+            conexion.ConnectionString = "Server=localhost; Database=supermercado; Uid=root; Pwd=xhandwyh;"
             conexion.Open()
             'MsgBox("Conectado")
         Catch ex As Exception
@@ -218,4 +218,5 @@ Public Class login
             Call Button1_Click(sender, e)
         End If
     End Sub
+
 End Class
